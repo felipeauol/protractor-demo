@@ -66,6 +66,7 @@ describe('Protractor Demo App', function () {
   })
 
   it('should read the value from an input', function () {
+    firstNumber.sendKeys('1')
     expect(firstNumber.getAttribute('value')).toEqual('1');
   });
 
