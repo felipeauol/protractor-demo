@@ -73,10 +73,10 @@ describe('Protractor Demo App', function () {
     add(1, 2);
     add(3, 4);
 
-    expect(history.count()).toEqual(42);
+    expect(history.count()).toEqual(2);
 
     add(5, 6);
 
-    expect(history.count()).toEqual(0);
+    expect(history.count()).toEqual(3);
   });
 });
