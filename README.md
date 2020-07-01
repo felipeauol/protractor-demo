@@ -13,3 +13,5 @@ Demo of protractor tests for a simple angular application
 ## Running the tests
 
 `npm run test`
+
+![Results](screenshot.png)
