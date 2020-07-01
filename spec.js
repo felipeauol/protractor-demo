@@ -65,6 +65,21 @@ describe('Protractor Demo App', function () {
     expect(latestResult.getText()).toEqual('2');
   })
 
+  it('should calculate remainder of 10 and 3', function () {
+    modulo(10, 3)
+    expect(latestResult.getText()).toEqual('1');
+  });
+
+  it('should multiply 5 and 3', function () {
+    multiply(5, 3)
+    expect(latestResult.getText()).toEqual('15');
+  });
+
+  it('should subtract 8 and 15', function () {
+    subtract(8, 15)
+    expect(latestResult.getText()).toEqual('-7');
+  })
+
   it('should read the value from an input', function () {
     firstNumber.sendKeys('1')
     expect(firstNumber.getAttribute('value')).toEqual('1');
