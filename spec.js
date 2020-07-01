@@ -5,6 +5,7 @@ describe('Protractor Demo App', function () {
   var goButton = element(by.id('gobutton'));
   var latestResult = element(by.binding('latest'));
   var history = element.all(by.repeater('result in memory'));
+  var EC = protractor.ExpectedConditions;
 
   function add(a, b) {
     firstNumber.sendKeys(a);
@@ -45,7 +46,8 @@ describe('Protractor Demo App', function () {
   });
 
   it('should have the title "Super Calculator"', function () {
-    fail("did not find title");
+    browser.wait(EC.titleContains('Super Calculator'));
+    // fail("did not find title");
   });
 
   it('should add one and two', function () {
